@@ -18,16 +18,16 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 
 ## Progress
 
-- [ ] *Section 1* – Quick Start & Setup (Initializr, project structure, Maven)  
-- [ ] *Section 2* – Spring Boot Core (Annotations, Java Config)  
-- [ ] *Section 3* – Spring MVC Fundamentals (Controllers, routing)  
-- [ ] *Section 4* – REST API Development (Hello World + CRUD)  
-- [ ] *Section 5* – Hibernate & JPA CRUD  
-- [ ] *Section 6* – Spring Data JPA (Repositories, queries)  
-- [ ] *Section 7* – Spring Data REST (Expose repositories)  
-- [ ] *Section 8* – REST API Security with Spring Security  
-- [ ] *Section 9* – MVC + Thymeleaf CRUD Web App  
-- [ ] *Section 10* – MVC Security (Form login, BCrypt)
+- [ ] *Section 1* – Spring Boot 3 Quick Start 
+- [ ] *Section 2* – Spring Core
+- [ ] *Section 3* – Hibernate/JPA CRUD 
+- [ ] *Section 4* – REST CRUD APIs 
+- [ ] *Section 5* – REST API Security
+- [ ] *Section 6* – Spring MVC 
+- [ ] *Section 7* – Spring MVC Crud  
+- [ ] *Section 8* – Spring MVC Security 
+- [ ] *Section 9* – JPA/Hibernate Advanced Mappings
+- [ ] *Section 10* – AOP: Aspect-Oriented Programming
 
 ---
 
@@ -43,7 +43,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 ## How to Run
 1. Clone this repository  
 2. Open in **IntelliJ IDEA**  
-3. Navigate to a section folder (e.g., `01-quick-start/`)  
+3. Navigate to a section folder (e.g., `section 1/`)  
 4. Run the Spring Boot application with `main()`  
 
 ---

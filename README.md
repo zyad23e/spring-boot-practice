@@ -2,7 +2,7 @@
 
 
 
-!\[Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-udemy-course?style=flat-square)
+!\[Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-practice?style=flat-square)
 
 
 

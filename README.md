@@ -43,7 +43,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 ## How to Run
 1. Clone this repository  
 2. Open in **IntelliJ IDEA**  
-3. Navigate to a section folder (e.g., `section 1/`)  
+3. Navigate to an exercise folder (e.g., `restcontrollerR`)  
 4. Run the Spring Boot application with `main()`  
 
 ---

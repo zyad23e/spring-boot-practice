@@ -26,9 +26,25 @@ public class CruddemoApplication {
             //createMultipleStudents(studentDAO);
             //readStudent(studentDAO);
             //queryForStudents(studentDAO);
-
-            queryForStudentsByLastName(studentDAO);
+            //queryForStudentsByLastName(studentDAO);
+            updateStudent(studentDAO);
         };
+    }
+
+    private void updateStudent(StudentDAO studentDAO) {
+        // retrieve student based on the id: primary key
+        System.out.println("Getting student with id: " + 1);
+        Student theStudent = studentDAO.findByID(1);
+
+        // change first name to "Kyle"
+        System.out.println("Updating student . . . ");
+        theStudent.setFirstName("Kyle");
+
+        // update the student in the database
+        studentDAO.update(theStudent);
+
+        // display the updated student
+        System.out.println("Updated student: " + theStudent);
     }
 
     private void queryForStudentsByLastName(StudentDAO studentDAO) {
@@ -56,7 +72,7 @@ public class CruddemoApplication {
         System.out.println("Creating a new student object . . .");
         Student tempStudent = new Student("AJ", "Brown", "AJB@gmail.com");
 
-        // save the student
+        // save the student to the database
         System.out.println("Saving the student . . .");
         studentDAO.save(tempStudent);
 
@@ -79,7 +95,7 @@ public class CruddemoApplication {
         Student tempStudent2 = new Student("Mike", "Vrabel", "MikeVrabel@gmail.com");
         Student tempStudent3 = new Student("Kevin", "Occonnel", "KOC@gmail.com");
 
-        // save the student objects
+        // save the student objects to the database
         System.out.println("Saving the students . . .");
         studentDAO.save(tempStudent1);
         studentDAO.save(tempStudent2);
@@ -91,7 +107,7 @@ public class CruddemoApplication {
         System.out.println("Creating new student object . . .");
         Student tempStudent = new Student("John", "Harbaugh", "JohnHarbaugh@gmail.com");
 
-        // save the student object
+        // save the student object to the database
         System.out.println("Saving the student . . .");
         studentDAO.save(tempStudent);
 

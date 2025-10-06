@@ -20,7 +20,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 
 - [✅] *Section 1* – Spring Boot 3 Quick Start 
 - [✅] *Section 2* – Spring Core
-- [ ] *Section 3* – Hibernate/JPA CRUD 
+- [✅] *Section 3* – Hibernate/JPA CRUD 
 - [ ] *Section 4* – REST CRUD APIs 
 - [ ] *Section 5* – REST API Security
 - [ ] *Section 6* – Spring MVC 
@@ -43,7 +43,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 ## How to Run
 1. Clone this repository  
 2. Open in **IntelliJ IDEA**  
-3. Navigate to an exercise folder (e.g., `01-spring-boot-overview/`)  
+3. Navigate to an exercise folder (e.g., `01-spring-boot-overview/02-dev-tools-demo/`)  
 4. Run the Spring Boot application with `main()`  
 
 ---

@@ -32,7 +32,8 @@ public class DemoSecurityConfig {
                         requestMatchers(HttpMethod.GET, "/api/employees/**").hasRole("EMPLOYEE").
                         requestMatchers(HttpMethod.POST, "/api/employees").hasRole("MANAGER").
                         requestMatchers(HttpMethod.PUT, "/api/employees").hasRole("MANAGER").
-                        requestMatchers(HttpMethod.DELETE, "/api/employees").hasRole("ADMIN"));
+                        requestMatchers(HttpMethod.DELETE, "/api/employees").hasRole("ADMIN").
+                        requestMatchers(HttpMethod.PATCH, "/api/employees/**").hasRole("MANAGER"));
 
         // use HTTP Basic authentication
         http.httpBasic(Customizer.withDefaults());

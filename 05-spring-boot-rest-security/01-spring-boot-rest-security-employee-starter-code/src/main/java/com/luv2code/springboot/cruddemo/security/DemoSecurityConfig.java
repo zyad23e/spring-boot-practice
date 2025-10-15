@@ -8,22 +8,22 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.provisioning.JdbcUserDetailsManager;
+import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class DemoSecurityConfig {
 
-    // assign specific roles to specific users in the database
+    // add support for JDBC . . . no more hardcoded users
     @Bean
-    public InMemoryUserDetailsManager userDetailsManager(){
-        UserDetails john = User.builder().username("john").password("{noop}test123").roles("EMPLOYEE").build();
-        UserDetails mary = User.builder().username("mary").password("{noop}testmary123").roles("EMPLOYEE", "MANAGER").build();
-        UserDetails susan = User.builder().username("susan").password("{noop}testsusan123").roles("EMPLOYEE", "MANAGER", "ADMIN").build();
-
-        return new InMemoryUserDetailsManager(john, susan, mary);
+    public UserDetailsManager userDetailsManager(DataSource dataSource) {
+        return new JdbcUserDetailsManager(dataSource);
     }
 
-    // restrict access to certain http methods depending on their roles
+    // restrict access to certain HTTP methods depending on their roles
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(configurer ->
@@ -42,4 +42,16 @@ public class DemoSecurityConfig {
         http.csrf(csrf -> csrf.disable());
         return http.build();
     }
+
+    // build usernames and passwords for users and assign them roles to access HTTP requests
+    /*
+    @Bean
+    public InMemoryUserDetailsManager userDetailsManager(){
+        UserDetails john = User.builder().username("john").password("{noop}test123").roles("EMPLOYEE").build();
+        UserDetails mary = User.builder().username("mary").password("{noop}testmary123").roles("EMPLOYEE", "MANAGER").build();
+        UserDetails susan = User.builder().username("susan").password("{noop}testsusan123").roles("EMPLOYEE", "MANAGER", "ADMIN").build();
+
+        return new InMemoryUserDetailsManager(john, susan, mary);
+    }
+    */
 }

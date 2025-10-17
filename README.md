@@ -19,7 +19,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 ## Progress
 
 - [✅] *Section 1* – Spring Boot 3 Quick Start 
-- [✅] *Section 2** – Spring Core
+- [✅] *Section 2* – Spring Core
 - [✅] *Section 3* – Hibernate/JPA CRUD 
 - [✅] *Section 4* – REST CRUD APIs 
 - [ ] *Section 5* – REST API Security

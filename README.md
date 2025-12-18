@@ -25,7 +25,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 - [✅] *Section 5* – REST API Security
 - [✅] *Section 6* – Spring MVC 
 - [✅] *Section 7* – Spring MVC Crud  
-- [ ] *Section 8* – Spring MVC Security 
+- [✅] *Section 8* – Spring MVC Security 
 - [ ] *Section 9* – JPA/Hibernate Advanced Mappings
 - [ ] *Section 10* – AOP: Aspect-Oriented Programming
 

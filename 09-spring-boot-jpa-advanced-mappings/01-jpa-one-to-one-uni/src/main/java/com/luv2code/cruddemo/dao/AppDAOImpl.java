@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 
+// the purpose of this class is really to talk to the database.
 public class AppDAOImpl implements AppDAO{
 
     // define field for entity manager

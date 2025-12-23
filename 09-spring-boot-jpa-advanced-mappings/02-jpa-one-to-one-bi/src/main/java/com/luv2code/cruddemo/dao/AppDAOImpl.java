@@ -1,6 +1,7 @@
 package com.luv2code.cruddemo.dao;
 
 import com.luv2code.cruddemo.entity.Instructor;
+import com.luv2code.cruddemo.entity.InstructorDetail;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class AppDAOImpl implements AppDAO{
     }
 
     @Override
-    // add @Transcational since we are persisting the entity
+    // add @Transactional since we are persisting the entity
     @Transactional
     public void save(Instructor theInstructor) {
         entityManager.persist(theInstructor);
@@ -39,5 +40,10 @@ public class AppDAOImpl implements AppDAO{
 
         // delete the instructor
         entityManager.remove(tempInstructor);
+    }
+
+    @Override
+    public InstructorDetail findInstructorDetailById(int theId) {
+        return entityManager.find(InstructorDetail.class, theId);
     }
 }

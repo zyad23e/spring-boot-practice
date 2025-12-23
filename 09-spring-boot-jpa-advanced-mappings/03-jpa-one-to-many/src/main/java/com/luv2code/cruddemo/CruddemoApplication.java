@@ -26,7 +26,7 @@ public class CruddemoApplication {
 
             //findInstructor(appDAO);
 
-            //deleteInstructor(appDAO);
+            deleteInstructor(appDAO);
 
             //findInstructorDetail(appDAO);
 
@@ -42,7 +42,7 @@ public class CruddemoApplication {
 
             //updateInstructor(appDAO);
 
-            updateCourse(appDAO);
+            //updateCourse(appDAO);
         };
     }
 
@@ -165,7 +165,7 @@ public class CruddemoApplication {
     }
 
     private void deleteInstructor(AppDAO appDAO) {
-        int theId = 4;
+        int theId = 1;
         System.out.println("Deleting instructor id: " + theId);
         appDAO.deleteInstructorById(theId);
 

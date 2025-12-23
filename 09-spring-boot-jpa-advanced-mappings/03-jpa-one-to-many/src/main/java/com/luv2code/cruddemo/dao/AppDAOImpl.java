@@ -94,4 +94,15 @@ public class AppDAOImpl implements AppDAO{
         // merge updates an existing entity
         entityManager.merge(tempInstructor);
     }
+
+    @Override
+    @Transactional
+    public void update(Course tempCourse) {
+        entityManager.merge(tempCourse);
+    }
+
+    @Override
+    public Course findCourseById(int theId) {
+        return entityManager.find(Course.class, theId);
+    }
 }

@@ -57,6 +57,7 @@ public class CruddemoApplication {
         System.out.println("Updating course id: " + theId);
         tempCourse.setTitle("Enjoy the Simple Things!");
         appDAO.update(tempCourse);
+        System.out.println("Done!");
     }
 
     private void updateInstructor(AppDAO appDAO) {

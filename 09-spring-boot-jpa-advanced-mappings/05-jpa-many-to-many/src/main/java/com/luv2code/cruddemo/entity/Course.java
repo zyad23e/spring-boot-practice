@@ -18,7 +18,7 @@ public class Course {
     @Column(name = "title")
     private String title;
 
-    // we dont want to add cascade delete
+    // we don't want to add cascade delete
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "instructor_id")
     private Instructor instructor;

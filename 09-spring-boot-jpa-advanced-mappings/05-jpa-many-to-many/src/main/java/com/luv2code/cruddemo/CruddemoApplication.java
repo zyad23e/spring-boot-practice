@@ -23,7 +23,8 @@ public class CruddemoApplication {
             //createCourseAndStudents(appDAO);
             //findCourseAndStudents(appDAO);
             //findStudentAndCourses(appDAO);
-            addMoreCoursesForStudent(appDAO);
+            //addMoreCoursesForStudent(appDAO);
+            deleteCourse(appDAO);
         };
     }
 
@@ -35,7 +36,7 @@ public class CruddemoApplication {
         tempStudent.addCourse(new Course("Atari 2600 - Game Development"));
 
         System.out.println("Saving student: " + tempStudent);
-        System.out.println("Associated courses: " + tempStudent);
+        System.out.println("Associated courses: " + tempStudent.getCourses());
 
         appDAO.update(tempStudent);
 

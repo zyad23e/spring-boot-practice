@@ -16,6 +16,7 @@ import java.util.List;
 public class AppDAOImpl implements AppDAO{
 
     // define field for entity manager
+    // manages entities and talks to the database on your behalf!
     private EntityManager entityManager;
 
     // inject entity manager using constructor injection
@@ -122,5 +123,11 @@ public class AppDAOImpl implements AppDAO{
 
         // delete the course
         entityManager.remove(tempCourse);
+    }
+
+    @Override
+    @Transactional
+    public void save(Course theCourse) {
+        entityManager.persist(theCourse);
     }
 }

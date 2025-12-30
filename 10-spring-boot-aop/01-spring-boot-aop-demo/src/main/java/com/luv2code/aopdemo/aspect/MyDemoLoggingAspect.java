@@ -13,7 +13,9 @@ public class MyDemoLoggingAspect {
 
     // let's start with a @Before advice
     // pointcut expression, run this code BEFORE - target object method: "public void addAccount()"
-    @Before("execution(public void add*())")
+    //@Before("execution(public void add*())")
+    @Before("execution(* add*())")
+
     public void beforeAddAccountAdvice(){
 
         System.out.println("\n=====>>> Executing @Before advice on method");

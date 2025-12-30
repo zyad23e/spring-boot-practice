@@ -12,9 +12,8 @@ public class MyDemoLoggingAspect {
     // this is where we add all of our related advices for logging
 
     // let's start with a @Before advice
-    // pointcut expression, run this code BEFORE - target object method: "public void addAccount()"
-    //@Before("execution(public void add*())")
-    @Before("execution(* add*())")
+    // pointcut expression, run this code BEFORE - target object method:
+    @Before("execution(* add*(com.luv2code.aopdemo.Account))")
 
     public void beforeAddAccountAdvice(){
 

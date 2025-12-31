@@ -1,9 +1,11 @@
-# Spring Boot 3 – Udemy Practice
+# Spring Boot Practice – Udemy (Chad Darby)
 
 ![Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-practice?style=flat-square)
 
 This repository contains my practice projects and exercises from the Udemy course  
-**"Spring Boot 3, Spring 6 & Hibernate for Beginners" by Chad Darby**.  
+**"Spring Boot 4: Learn Spring 7, Spring Core, Spring REST, Spring Security, JPA, Hibernate, Swagger, Spring MVC, MySQL" by Chad Darby**.  
+> Note: Core projects in this repository are built using Spring Boot 3 / Spring 6, with later sections covering Spring Boot 4 updates and comparisons.
+
 I’m completing this step by step to strengthen my backend Java skills and master Spring Boot fundamentals.
 
 ---

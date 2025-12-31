@@ -21,6 +21,7 @@ public class MyDemoLoggingAspect {
     // this is where we add all of our related advices for logging
 
     // add a new advice for @AfterReturning on the findAccounts method
+    // this advice will execute AFTER the findAccounts() method is ran and successfully executed with no errors.
     @AfterReturning(pointcut = "execution(* com.luv2code.aopdemo.dao.AccountDAO.findAccounts(..))", returning = "result")
     public void afterReturningFindAccountsAdvice(JoinPoint theJoinPoint, List<Account> result){
 
@@ -31,6 +32,26 @@ public class MyDemoLoggingAspect {
         // print out the results of the method call
         System.out.println("\n=====>>> result is: " + result);
 
+        // let's post-process the data ... let's modify it
+
+        // convert the account names to uppercase
+        convertAccountNamesToUpperCase(result);
+
+        System.out.println("\n=====>>> result is: " + result);
+
+    }
+
+    private void convertAccountNamesToUpperCase(List<Account> result) {
+
+        // loop through accounts
+        for (Account a: result){
+
+            // get uppercase version of name
+            String upperName = a.getName().toUpperCase();
+
+            // update the name on the account
+            a.setName(upperName);
+        }
     }
 
     // let's start with a @Before advice

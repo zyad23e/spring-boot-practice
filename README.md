@@ -1,4 +1,4 @@
-# Spring Boot Practice – Udemy (Chad Darby)
+# Spring Boot Practice Projects
 
 ![Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-practice?style=flat-square)
 

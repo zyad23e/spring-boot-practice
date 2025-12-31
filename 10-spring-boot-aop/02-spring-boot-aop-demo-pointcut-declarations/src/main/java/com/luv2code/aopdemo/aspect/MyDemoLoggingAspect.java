@@ -2,6 +2,7 @@ package com.luv2code.aopdemo.aspect;
 
 import com.luv2code.aopdemo.Account;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
@@ -17,6 +18,24 @@ import java.util.List;
 public class MyDemoLoggingAspect {
 
     // this is where we add all of our related advices for logging
+
+    // add a new advice for @Around on the findAccounts method
+    // this advice will execute BEFORE and AFTER the findAccounts() method is ran
+    @Around("execution(* com.luv2code.aopdemo.service.*.getFortune(..))")
+    public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable {
+
+        // print out method we are advising on
+
+        // get begin timestamp
+
+        // now, let's execute the method
+
+        // get end timestamp
+
+        // compute duration and display it
+        
+        return null;
+    }
 
     // add a new advice for @After on the findAccounts method
     // this advice will execute AFTER the findAccounts() method is ran regardless if it was successfull or failure

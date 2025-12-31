@@ -21,7 +21,7 @@ public class AccountDAOImpl implements AccountDAO {
         myAccounts.add(new Account("John", "Silver"));
         myAccounts.add(new Account("Madhu", "Platinum"));
         myAccounts.add(new Account("Luka", "Gold"));
-        
+
         return myAccounts;
     }
 

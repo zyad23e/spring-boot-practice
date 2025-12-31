@@ -47,10 +47,6 @@ These projects were built through structured Spring Boot training and extended t
 
 ## How to Run
 
-1. Clone this repository  
-2. Navigate to a project folder  
-3. Run using Maven:
-   ```bash
-   ./mvnw spring-boot:run
+Open an individual project folder in IntelliJ IDEA and run the main application class.
 
 

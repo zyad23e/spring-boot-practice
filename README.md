@@ -41,6 +41,21 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 
 ---
 
+## Key Concepts & Technologies Practiced
+
+- **Java & OOP** – classes, interfaces, encapsulation, polymorphism  
+- **SQL** – schema design, joins, primary/foreign keys  
+- **Hibernate & JPA** – entities, repositories, JPQL, relationships  
+- **Spring Core** – dependency injection, bean scopes, lifecycle  
+- **Spring MVC** – controllers, request mapping, validation  
+- **REST APIs** – CRUD endpoints, JSON, exception handling  
+- **Spring Security** – authentication, authorization, role-based access  
+- **Spring AOP** – before/after advice, pointcuts, logging  
+- **Database Integration** – MySQL, JDBC configuration  
+- **Build & Config** – Maven, application.properties
+
+---
+
 ## How to Run
 1. Clone this repository  
 2. Open in **IntelliJ IDEA**  

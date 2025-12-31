@@ -1,7 +1,6 @@
 package com.luv2code.springboot.cruddemo.rest;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import com.luv2code.springboot.cruddemo.entity.Employee;
 import com.luv2code.springboot.cruddemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +15,12 @@ public class EmployeeRestController {
 
     private EmployeeService employeeService;
 
-    private ObjectMapper objectMapper;
+    private JsonMapper jsonMapperMapper;
 
     @Autowired
-    public EmployeeRestController(EmployeeService theEmployeeService, ObjectMapper theObjectMapper) {
+    public EmployeeRestController(EmployeeService theEmployeeService, JsonMapper theJsonMapper) {
         employeeService = theEmployeeService;
-        objectMapper = theObjectMapper;
+        jsonMapperMapper = theJsonMapper;
     }
 
     // expose "/employees" and return a list of employees
@@ -73,7 +72,7 @@ public class EmployeeRestController {
 
     @PatchMapping("/employees/{employeeId}")
     public Employee patchEmployee(@PathVariable int employeeId,
-                                  @RequestBody Map<String, Object> patchPayload) throws JsonMappingException {
+                                  @RequestBody Map<String, Object> patchPayload) {
 
         Employee tempEmployee = employeeService.findById(employeeId);
 
@@ -88,7 +87,7 @@ public class EmployeeRestController {
         }
 
         // Apply the partial updates to the existing employee object.
-        Employee patchedEmployee = objectMapper.updateValue(tempEmployee, patchPayload);
+        Employee patchedEmployee = jsonMapperMapper.updateValue(tempEmployee, patchPayload);
 
         Employee dbEmployee = employeeService.save(patchedEmployee);
 

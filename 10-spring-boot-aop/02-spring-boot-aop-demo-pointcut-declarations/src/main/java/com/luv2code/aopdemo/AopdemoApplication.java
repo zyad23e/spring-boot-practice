@@ -29,7 +29,7 @@ public class AopdemoApplication {
         Account myAccount = new Account();
         myAccount.setName("Zyad");
         myAccount.setLevel("Platinum");
-        
+
         theAccountDAO.addAccount(myAccount, true);
         theAccountDAO.doWork();
 

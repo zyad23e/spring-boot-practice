@@ -30,7 +30,7 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 - [✅] *Section 8* – Spring MVC Security 
 - [✅] *Section 9* – JPA/Hibernate Advanced Mappings
 - [✅] *Section 10* – AOP: Aspect-Oriented Programming
-- [ ] *Section 11* – What's New in Spring Boot 4
+- [✅] *Section 11* – What's New in Spring Boot 4
 
 ---
 

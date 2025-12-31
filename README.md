@@ -1,45 +1,26 @@
 # Spring Boot Practice Projects
 
-![Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-practice?style=flat-square)
+Collection of Spring Boot backend projects demonstrating RESTful APIs, persistence with JPA/Hibernate, Spring Security, MVC patterns, and AOP.
 
-This repository contains my practice projects and exercises from the Udemy course  
-**"Spring Boot 4: Learn Spring 7, Spring Core, Spring REST, Spring Security, JPA, Hibernate, Swagger, Spring MVC, MySQL" by Chad Darby**.  
-> Note: Core projects in this repository are built using Spring Boot 3 / Spring 6, with later sections covering Spring Boot 4 updates and comparisons.
+This repository showcases hands-on implementation of common backend patterns and Spring Boot fundamentals through multiple focused projects.
 
-I’m completing this step by step to strengthen my backend Java skills and master Spring Boot fundamentals.
-
----
-
-## Course Info
-- **Platform:** Udemy  
-- **Language:** Java 25  
-- **IDE:** IntelliJ IDEA  
-- **Approach:** Completing each section/project in full and pushing progress regularly to GitHub.
+![Last Commit](https://img.shields.io/github/last-commit/zyad23e/spring-boot-practice-projects?style=flat-square)
 
 ---
 
 ## Progress
 
-- [✅] *Section 1* – Spring Boot 3 Quick Start 
-- [✅] *Section 2* – Spring Core
-- [✅] *Section 3* – Hibernate/JPA CRUD 
-- [✅] *Section 4* – REST CRUD APIs 
-- [✅] *Section 5* – REST API Security
-- [✅] *Section 6* – Spring MVC 
-- [✅] *Section 7* – Spring MVC Crud  
-- [✅] *Section 8* – Spring MVC Security 
-- [✅] *Section 9* – JPA/Hibernate Advanced Mappings
-- [✅] *Section 10* – AOP: Aspect-Oriented Programming
-- [✅] *Section 11* – What's New in Spring Boot 4
-
----
-
-## Goals
-- Build REST APIs with Spring MVC & Spring Boot  
-- Apply Hibernate and Spring Data JPA for persistence  
-- Secure REST APIs and MVC apps with Spring Security  
-- Use Spring Boot Actuator for monitoring & health checks  
-- Maintain a consistent public record of progress
+- [✅] Section 1 – Spring Boot 3 Quick Start  
+- [✅] Section 2 – Spring Core  
+- [✅] Section 3 – Hibernate/JPA CRUD  
+- [✅] Section 4 – REST CRUD APIs  
+- [✅] Section 5 – REST API Security  
+- [✅] Section 6 – Spring MVC  
+- [✅] Section 7 – Spring MVC CRUD  
+- [✅] Section 8 – Spring MVC Security  
+- [✅] Section 9 – JPA/Hibernate Advanced Mappings  
+- [✅] Section 10 – AOP (Aspect-Oriented Programming)  
+- [✅] Section 11 – What’s New in Spring Boot 4  
 
 ---
 
@@ -54,18 +35,22 @@ I’m completing this step by step to strengthen my backend Java skills and mast
 - **Spring Security** – authentication, authorization, role-based access  
 - **Spring AOP** – before/after advice, pointcuts, logging  
 - **Database Integration** – MySQL, JDBC configuration  
-- **Build & Config** – Maven, application.properties
+- **Build & Config** – Maven, application.properties  
+
+---
+
+## Background
+
+These projects were built through structured Spring Boot training and extended through hands-on implementation to reinforce backend fundamentals and common application patterns.
 
 ---
 
 ## How to Run
+
 1. Clone this repository  
-2. Open in **IntelliJ IDEA**  
-3. Navigate to an exercise folder (e.g., `01-spring-boot-overview/02-dev-tools-demo/`)  
-4. Run the Spring Boot application with `main()`  
+2. Navigate to a project folder  
+3. Run using Maven:
+   ```bash
+   ./mvnw spring-boot:run
 
----
-
-## License
-This project is for educational purposes only.
 
